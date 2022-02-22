@@ -49,7 +49,7 @@ module.exports = {
 	},
 };
 
-function error(err)
+async function error(err)
 {
 	console.error(err);
 	try {
