@@ -13,8 +13,8 @@ module.exports = {
 			try {
 				await command.execute(interaction);
 			}
-			catch (error) {
-				error(error);
+			catch (err) {
+				error(err);
 			}
 		}
 		else if (interaction.isSelectMenu())
@@ -26,8 +26,8 @@ module.exports = {
 			try {
 				await menu.execute(interaction);
 			}
-			catch (error) {
-				error(error);				
+			catch (err) {
+				error(err);				
 			}
 		}
 		else if (interaction.isButton())
@@ -39,8 +39,8 @@ module.exports = {
 			try {
 				await button.execute(interaction);
 			}
-			catch (error) {
-				error(error);				
+			catch (err) {
+				error(err);				
 			}
 		}
 		else {
